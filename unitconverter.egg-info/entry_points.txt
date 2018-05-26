@@ -1,3 +1,0 @@
-[console_scripts]
-unitconvert = unitconverter.CLI:run_cli
-
