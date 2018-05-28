@@ -1,5 +1,6 @@
 from .. import UnitTable
 
+
 class angle(UnitTable.UnitTable):
 
     def __init__(self):
@@ -9,5 +10,5 @@ class angle(UnitTable.UnitTable):
         self.base_unit = 'degree'
 
         # Radians
-        self.to_base_unit['radian']        = lambda x: x / 0.0174532925
-        self.from_base_unit['radian']      = lambda x: x * 0.0174532925
+        self.to_base_unit['radian'] = lambda x: x / 0.0174532925
+        self.from_base_unit['radian'] = lambda x: x * 0.0174532925

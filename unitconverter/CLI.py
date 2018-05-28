@@ -76,7 +76,7 @@ def _run_unit_list(props):
                 formula = 'base unit'
             else:
                 conversion = inspect.getsource(table.from_base_unit[unit])
-                formula = conversion[conversion.index(':')+1:conversion.index('\n')].strip()
+                formula = conversion[conversion.index(':') + 1:conversion.index('\n')].strip()
             print '%s (%s)' % (unit, formula)
         else:
             print unit

@@ -9,7 +9,6 @@ class UnitTable(object):
         self.to_base_unit = {}
         self.from_base_unit = {}
 
-
     def convert(self, source, dest, value):
         """
         Converts a value in one unit to another.
@@ -31,7 +30,6 @@ class UnitTable(object):
 
         return value
 
-
     def get_units(self):
         """
         Returns a list of units that this table can convert.
@@ -42,7 +40,6 @@ class UnitTable(object):
         convertable_units = set(self.to_base_unit.keys()) & set(self.from_base_unit.keys())
         convertable_units.add(self.base_unit)
         return convertable_units
-
 
     def can_convert(self, unit):
         """
