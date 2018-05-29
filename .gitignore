@@ -1,5 +1,6 @@
 .idea/**/workspace.xml
 .ipynb_checkpoints/**
+**.pyc
 unitconverter.egg-info/**
 build/**
 dist/**
