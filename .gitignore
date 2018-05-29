@@ -4,3 +4,4 @@
 unitconverter.egg-info/**
 build/**
 dist/**
+**.txt
