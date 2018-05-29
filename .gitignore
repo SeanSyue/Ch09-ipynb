@@ -1,7 +1,7 @@
 .idea/**
 .ipynb_checkpoints/**
 **.pyc
-unitconverter.egg-info/**
+*.egg-info/**
 build/**
 dist/**
 **.txt
