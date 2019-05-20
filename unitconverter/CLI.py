@@ -1,6 +1,6 @@
 import argparse
 import inspect
-from Converter import get_table, convert_units
+from .Converter import get_table, convert_units
 
 
 def run_cli():
@@ -69,7 +69,7 @@ def _run_unit_list(props):
     """
 
     table = get_table(props.table)
-    print 'Unit table %s can convert between the units:'
+    print('Unit table %s can convert between the units:')
     for unit in table.get_units():
         if props.method:
             if unit == table.base_unit:
@@ -77,9 +77,9 @@ def _run_unit_list(props):
             else:
                 conversion = inspect.getsource(table.from_base_unit[unit])
                 formula = conversion[conversion.index(':') + 1:conversion.index('\n')].strip()
-            print '%s (%s)' % (unit, formula)
+            print('%s (%s)' % (unit, formula))
         else:
-            print unit
+            print(unit)
 
 
 def _run_conversion(props):
@@ -95,6 +95,6 @@ def _run_conversion(props):
                             targets=props.to_units)
 
     for result in results:
-        print '%f %s = %f %s' % (props.value, props.from_unit,
+        print('%f %s = %f %s' % (props.value, props.from_unit,
                                  result['converted_value'],
-                                 result['dest_unit'])
+                                 result['dest_unit']))

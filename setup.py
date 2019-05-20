@@ -9,7 +9,9 @@ setup(
     description='Command line tool for unit conversion',
     classifiers=[
         'Natural Language :: English',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ],
     author='Dan Nixon',
     packages=['unitconverter', 'unitconverter.unit_tables'],
